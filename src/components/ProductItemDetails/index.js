@@ -79,7 +79,7 @@ class ProductItemDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="loader" className="products-details-loader-container">
+    <div data-testid="loader" className="products-details-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -160,7 +160,7 @@ class ProductItemDetails extends Component {
                 <hr className="horizontal-line" />
                 <div className="quantity-container">
                   <button
-                    testid="minus"
+                    data-testid="minus"
                     type="button"
                     className="quantity-controller-button"
                     onClick={this.onDecrementQuantity}
@@ -169,7 +169,7 @@ class ProductItemDetails extends Component {
                   </button>
                   <p className="quantity">{quantity}</p>
                   <button
-                    testid="plus"
+                    data-testid="plus"
                     type="button"
                     className="quantity-controller-button"
                     onClick={this.onIncrementQuantity}
