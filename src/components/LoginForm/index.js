@@ -37,7 +37,7 @@ class LoginForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    if (username === 'ravi' && password === 'ravi@2021') {
+    if (username === 'ravi' && password === 'ravi@1428') {
       userDetails.username = 'rahul'
       userDetails.password = 'rahul@2021'
     }
